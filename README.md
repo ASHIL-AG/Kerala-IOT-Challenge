@@ -7,11 +7,35 @@ A basic program similar to printing "Hello World" in any programming language. T
 
 Arduino Uno is an open-source microcontroller board developed by Arduino.cc. It has several advantages over the conventional microcontrollers. It comes with a pre-tested software and hardware libraries and has its own integrated development environment (IDE). Also it is less expensive & beginner friendly.
 
-# Components Required
- Arduino Uno Board
- USB Cable
- LED (Any Color) x 1 Nos
- 220 OHM Resistor X 1 Nos
- Breadboard
- Jumper Wires (Male to Male ) X 2 Nos
- Circuit Diagram
+## Components Required  
+* Arduino Uno Board 
+* USB Cable 
+* LED (Any Color) x 1 Nos
+* 220 OHM Resistor X 1 Nos
+* Breadboard 
+* Jumper Wires (Male to Male ) X 2 Nos
+
+## Circuit Diagram
+![WhatsApp Image 2021-11-28 at 1 57 36 AM](https://user-images.githubusercontent.com/61041490/143734907-3348e28f-129c-42c6-8160-a50b93e9ca5f.jpeg)
+
+![5h7X9_3102_1627394356](https://user-images.githubusercontent.com/91405741/137279765-8a82a34f-1dc0-4afc-9bd3-a31d7f62c428.png)
+
+## Code
+
+```
+int ledPin = 10; // define digital pin 10.
+void setup()
+{
+pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+}
+void loop()
+{
+digitalWrite(ledPin, HIGH); // set the LED on.
+delay(1000); // wait for a second.
+digitalWrite(ledPin, LOW); // set the LED off.
+delay(1000); // wait for a second
+}
+```
+
+## Output
+
