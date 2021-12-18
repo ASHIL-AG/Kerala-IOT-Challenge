@@ -16,7 +16,6 @@ Arduino Uno is an open-source microcontroller board developed by Arduino.cc. It 
 * Jumper Wires (Male to Male ) X 2 Nos
 
 ## Circuit Diagram
-![WhatsApp Image 2021-11-28 at 1 57 36 AM](https://user-images.githubusercontent.com/61041490/143734907-3348e28f-129c-42c6-8160-a50b93e9ca5f.jpeg)
 
 ![5h7X9_3102_1627394356](https://user-images.githubusercontent.com/91405741/137279765-8a82a34f-1dc0-4afc-9bd3-a31d7f62c428.png)
 
