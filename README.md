@@ -89,3 +89,48 @@ digitalWrite(redled, LOW);// turn off red LED
 
 > In Traffic light the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. This process continues.
 
+# Experiment 3 : LED Chasing Effect
+
+> We often see billboards composed of colorful LEDs. They are constantly changing to form various light effects. In this experiment, we compile a program to simulate LED chasing effect. The long lead of LED is the positive side; short lead is negative.
+## Components Required
+
+* Led *6
+* Arduino board *1
+* 220Ω resistor *6
+* Breadboard *1
+* USB cable*1
+* Breadboard wire *13
+
+## Circuit Diagram
+
+![s5yR0_3102_1627567167](https://user-images.githubusercontent.com/91405741/137292096-feb60c91-1a9a-474b-a596-300285f7b011.png)
+
+## Code
+
+```
+int BASE = 2 ;  // the I/O pin for the first LED
+int NUM = 6;   // number of LEDs
+void setup()
+{
+   for (int i = BASE; i < BASE + NUM; i ++) 
+   {
+     pinMode(i, OUTPUT);   // set I/O pins as output
+   }
+}
+void loop()
+{
+   for (int i = BASE; i < BASE + NUM; i ++) 
+   {
+     digitalWrite(i, LOW);    // set I/O pins as “low”, turn off LEDs one by one.
+     delay(200);        // delay
+   }
+   for (int i = BASE; i < BASE + NUM; i ++) 
+   {
+     digitalWrite(i, HIGH);    // set I/O pins as “high”, turn on LEDs one by one
+     delay(400);        // delay
+   }  
+}
+```
+
+## Output
+
