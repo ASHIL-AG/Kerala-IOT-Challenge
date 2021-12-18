@@ -37,4 +37,4 @@ delay(1000); // wait for a second
 ```
 
 ## Output
-
+> The LED is blinked with a time interval of 1 second
