@@ -38,6 +38,8 @@ delay(1000); // wait for a second
 
 ## Output
 > The LED is blinked with a time interval of 1 second
+<iframe width="560" height="315"
+src=
  https://user-images.githubusercontent.com/95869156/146654302-7499a267-e699-4476-86a8-3204b2d5c383.mp4
 # Experiment 2 : Traffic Light
 
