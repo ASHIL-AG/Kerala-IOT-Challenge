@@ -38,6 +38,7 @@ delay(1000); // wait for a second
 
 ## Output
 > The LED is blinked with a time interval of 1 second
+ https://user-images.githubusercontent.com/95869156/146654302-7499a267-e699-4476-86a8-3204b2d5c383.mp4
 # Experiment 2 : Traffic Light
 
 > In the previous program, we have done the LED blinking experiment with one LED. Now, it’s time to up the stakes and do a bit more complicated experiment-traffic lights. Actually, these two experiments are similar. While in this traffic lights experiment, we use 3 LEDs with different colors rather than 1 LED.
