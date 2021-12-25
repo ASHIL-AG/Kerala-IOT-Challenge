@@ -61,6 +61,8 @@ allowfullscreen></iframe>
 ## Circuit Diagram
 
 ![yiU1x_3102_1627566759](https://user-images.githubusercontent.com/91405741/137288387-e85f8db9-ae97-49d0-888d-a2fc15e4c496.png)
+![IMG_20211219_005436](https://user-images.githubusercontent.com/95869156/147391612-79d898e9-72c9-4457-863b-f08a46fd0677.jpg)
+
 
 ## Code
 
