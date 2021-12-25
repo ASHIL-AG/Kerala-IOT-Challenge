@@ -173,4 +173,3 @@ allowfullscreen></iframe>
 ## Circuit Diagrams
 
 
-![WhatsApp Image 2021-11-27 at 8 05 22 AM](https://user-images.githubusercontent.com/61041490/143665616-c32bc20a-a3e2-4fa4-95cf-8804403acac8.jpeg)
