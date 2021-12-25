@@ -41,6 +41,7 @@ delay(1000); // wait for a second
 > The LED is blinked with a time interval of 1 second
 <iframe width="560" height="315"
 src=
+        
  https://user-images.githubusercontent.com/95869156/146654302-7499a267-e699-4476-86a8-3204b2d5c383.mp4
        
 frameborder="0" 
@@ -149,7 +150,7 @@ void loop()
 <iframe width="560" height="315"
 src=
 
-https://user-images.githubusercontent.com/61041490/142654980-b1a8c6e6-f196-4149-acf2-a5ddceae817f.mp4
+
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
