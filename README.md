@@ -100,6 +100,16 @@ digitalWrite(redled, LOW);// turn off red LED
 
 > In Traffic light the green LED blink about 5 second, then it is turnoff. Then the yellow LED blinks 3 times with a time interval of 0.5 second.Then the red LED blink about 5 seconds. This process continues.
 
+> The LED is blinked with a time interval of 1 second
+<iframe width="560" height="315"
+src=
+        
+ https://user-images.githubusercontent.com/95869156/147391852-4ac6fe15-21fc-4571-a6a6-41080ab51cce.mp4
+
+       
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe> 
 # Experiment 3 : LED Chasing Effect
 
 > We often see billboards composed of colorful LEDs. They are constantly changing to form various light effects. In this experiment, we compile a program to simulate LED chasing effect. The long lead of LED is the positive side; short lead is negative.
