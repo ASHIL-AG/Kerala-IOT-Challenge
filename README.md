@@ -145,3 +145,31 @@ void loop()
 
 ## Output
 
+
+<iframe width="560" height="315"
+src=
+
+https://user-images.githubusercontent.com/61041490/142654980-b1a8c6e6-f196-4149-acf2-a5ddceae817f.mp4
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+# Experiment 4 : Button Controlled LED
+
+> An experiment to light an LED using a Push Button.
+## Components Required 
+
+* Arduino Uno
+* Button switch*1
+* Red M5 LED*1
+* 220ΩResistor*1
+* 10KΩ Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*6
+* USB cable*1
+
+## Circuit Diagrams
+
+
+![WhatsApp Image 2021-11-27 at 8 05 22 AM](https://user-images.githubusercontent.com/61041490/143665616-c32bc20a-a3e2-4fa4-95cf-8804403acac8.jpeg)
