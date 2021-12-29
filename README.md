@@ -184,3 +184,50 @@ allowfullscreen></iframe>
 ## Circuit Diagrams
 
 ![Button-controlled-LED-Circuit-diagram-using-Arduino](https://user-images.githubusercontent.com/95869156/147691641-fbc56c43-cb84-48d0-b519-ff0738debcdb.png)
+
+## Code
+
+```
+int ledpin=11;// initialize pin 11
+int inpin=7;// initialize pin 7
+int val;// define val
+void setup()
+{
+pinMode(ledpin,OUTPUT);// set LED pin as “output”
+pinMode(inpin,INPUT);// set button pin as “input”
+}
+void loop()
+{
+val=digitalRead(inpin);// read the level value of pin 7 and assign if to val
+if(val==LOW)// check if the button is pressed, if yes, turn on the LED
+{ digitalWrite(ledpin,LOW);}
+else
+{ digitalWrite(ledpin,HIGH);}
+}
+```
+## Output
+
+> When the push button is pressed the LED is turned on otherwise it is off.
+<iframe width="560" height="315"
+src=
+
+
+
+
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+# Experiment 5 : Buzzer
+
+> An experiment to understand the working of a buzzer.
+## Components Required
+
+* Arduino Uno
+* Buzzer*1
+* Breadboard*1
+* Breadboard Jumper Wire*2
+* USB cable*1
+
+## Circuit Diagrams
