@@ -188,8 +188,8 @@ allowfullscreen></iframe>
 ## Code
 
 ```
-int ledpin=11;// initialize pin 11
-int inpin=7;// initialize pin 7
+int ledpin=2;// initialize pin 2
+int inpin=4;// initialize pin 4
 int val;// define val
 void setup()
 {
