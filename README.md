@@ -231,8 +231,6 @@ allowfullscreen></iframe>
 * USB cable*1
 
 ## Circuit Diagrams
-![WhatsApp Image 2021-11-27 at 7 51 10 AM](https://user-images.githubusercontent.com/61041490/143665286-4acec9c1-c304-4eb3-9e7a-2d3b3e3a32fe.jpeg)
-
 
 ![BBr05_3102_1628160460](https://user-images.githubusercontent.com/91405741/137346830-1fa2408c-2a1d-4fdf-a049-5736aeb803ec.png)
 
@@ -276,9 +274,6 @@ allowfullscreen></iframe>
 * Breadboard jumper wire*5
 
 ## Circuit Diagrams
-
-![WhatsApp Image 2021-11-28 at 2 19 45 AM](https://user-images.githubusercontent.com/61041490/143734847-367d2ee0-bad9-42b5-8c29-403e316c3449.jpeg)
-
 ![xX9cw_3102_1628160649](https://user-images.githubusercontent.com/91405741/137347719-6966c0b1-021d-471c-b0a7-48d0441752d0.png)
 
 ![A8a40_3102_1628160631](https://user-images.githubusercontent.com/91405741/137347782-e0a8a008-8706-4b7c-ba31-38ef0ab6ca72.png)
@@ -354,9 +349,6 @@ allowfullscreen></iframe>
 * USB cable*1
 
 ## Circuit Diagrams
-
-
-![WhatsApp Image 2021-11-27 at 8 14 06 AM](https://user-images.githubusercontent.com/61041490/143735034-0547c2f9-a62c-45ac-b4a1-15c36bb9195a.jpeg)
 ![schema_Myt5vqqplZ](https://user-images.githubusercontent.com/91405741/138436635-60cb2ec4-091d-4f24-bf96-b0289e06fa00.png)
 
 ## Procedure
