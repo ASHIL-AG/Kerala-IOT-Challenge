@@ -183,7 +183,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-[wQGca_3102_1628160139](https://user-images.githubusercontent.com/91405741/137344321-3e662dee-cb00-421d-a34d-848c2ffd1a6f.png)
+![wQGca_3102_1628160139](https://user-images.githubusercontent.com/91405741/137344321-3e662dee-cb00-421d-a34d-848c2ffd1a6f.png)
 
 ## Code
 
@@ -333,7 +333,6 @@ allowfullscreen></iframe>
 > Photo Resistor (Photovaristor) is a resistor whose resistance varies from different incident light strength. It's based on the photoelectric effect of semiconductor. If the incident light is intense, its resistance reduces; if the incident light is weak, the resistance increases.
 ## Circuit Diagrams
 
-![WhatsApp Image 2021-11-28 at 1 59 30 PM](https://user-images.githubusercontent.com/61041490/143735314-eee735f3-2660-47ca-911f-c459e0131d2f.jpeg)
 
 ![L5Iw9_3102_1628755894](https://user-images.githubusercontent.com/91405741/138436746-d1cfb008-0d90-4754-b4c4-fe133329c8b5.png)
 
