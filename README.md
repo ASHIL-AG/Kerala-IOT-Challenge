@@ -183,13 +183,13 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-![basicpushbutton](https://user-images.githubusercontent.com/95869156/147692600-0e38546d-b781-4ea7-8d07-e2e948aa6686.PNG)
+[wQGca_3102_1628160139](https://user-images.githubusercontent.com/91405741/137344321-3e662dee-cb00-421d-a34d-848c2ffd1a6f.png)
 
 ## Code
 
 ```
-int ledpin=2;// initialize pin 2
-int inpin=4;// initialize pin 4
+int ledpin=11;// initialize pin 11
+int inpin=7;// initialize pin 7
 int val;// define val
 void setup()
 {
@@ -231,3 +231,182 @@ allowfullscreen></iframe>
 * USB cable*1
 
 ## Circuit Diagrams
+![WhatsApp Image 2021-11-27 at 7 51 10 AM](https://user-images.githubusercontent.com/61041490/143665286-4acec9c1-c304-4eb3-9e7a-2d3b3e3a32fe.jpeg)
+
+
+![BBr05_3102_1628160460](https://user-images.githubusercontent.com/91405741/137346830-1fa2408c-2a1d-4fdf-a049-5736aeb803ec.png)
+
+![e9Pdc_3102_1628160446](https://user-images.githubusercontent.com/91405741/137346912-0f871dbf-8e86-4734-a337-fceeff454e33.png)
+
+## Code
+
+```
+int buzzer=8;// initialize digital IO pin that controls the buzzer
+void setup() 
+{ 
+  pinMode(buzzer,OUTPUT);// set pin mode as “output”
+} 
+void loop() 
+{
+digitalWrite(buzzer, HIGH); // produce sound
+}
+```
+
+## Output
+
+> The Buzzer makes beep sound.
+<iframe width="560" height="315"
+src=
+
+
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+# Experiment 6 : RGB LED
+
+> An experiment to understand the working of a RGB LED.
+## Components Required
+
+* Arduino Uno
+* USB Cable * 1
+* RGB LED * 1
+* Resistor *3
+* Breadboard jumper wire*5
+
+## Circuit Diagrams
+
+![WhatsApp Image 2021-11-28 at 2 19 45 AM](https://user-images.githubusercontent.com/61041490/143734847-367d2ee0-bad9-42b5-8c29-403e316c3449.jpeg)
+
+![xX9cw_3102_1628160649](https://user-images.githubusercontent.com/91405741/137347719-6966c0b1-021d-471c-b0a7-48d0441752d0.png)
+
+![A8a40_3102_1628160631](https://user-images.githubusercontent.com/91405741/137347782-e0a8a008-8706-4b7c-ba31-38ef0ab6ca72.png)
+
+![TefdI_3102_1628167200](https://user-images.githubusercontent.com/91405741/137347822-228ccf9c-3a89-45ba-bb24-c3b0ee587818.png)
+
+## Code
+
+```
+int redpin = 11; //select the pin for the red LED
+int bluepin =10; // select the pin for the blue LED
+int greenpin =9;// select the pin for the green LED
+int val;
+void setup() {
+  pinMode(redpin, OUTPUT);
+  pinMode(bluepin, OUTPUT);
+  pinMode(greenpin, OUTPUT);
+  Serial.begin(9600);
+}
+void loop() 
+{
+for(val=255; val>0; val--)
+  {
+   analogWrite(11, val);
+   analogWrite(10, 255-val);
+   analogWrite(9, 128-val);
+   delay(1); 
+  }
+for(val=0; val<255; val++)
+  {
+   analogWrite(11, val);
+   analogWrite(10, 255-val);
+   analogWrite(9, 128-val);
+   delay(1); 
+  }
+ Serial.println(val, DEC);
+}
+```
+
+## Output
+
+> The RGB LED blinks.
+<iframe width="560" height="315"
+src=
+
+
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+## Experiment 7 : LDR Light Sensor
+
+> An experiment to understand the working of an LDR light Sensor.
+### LDR : Light Dependent Sensor
+
+> Photo Resistor (Photovaristor) is a resistor whose resistance varies from different incident light strength. It's based on the photoelectric effect of semiconductor. If the incident light is intense, its resistance reduces; if the incident light is weak, the resistance increases.
+## Circuit Diagrams
+
+![WhatsApp Image 2021-11-28 at 1 59 30 PM](https://user-images.githubusercontent.com/61041490/143735314-eee735f3-2660-47ca-911f-c459e0131d2f.jpeg)
+
+![L5Iw9_3102_1628755894](https://user-images.githubusercontent.com/91405741/138436746-d1cfb008-0d90-4754-b4c4-fe133329c8b5.png)
+
+## Components Required
+
+* Arduino Uno Board
+* Photo Resistor*1
+* Red M5 LED*1
+* 10KΩ Resistor*1
+* 220Ω Resistor*1
+* Breadboard*1
+* Breadboard Jumper Wire*7
+* USB cable*1
+
+## Circuit Diagrams
+
+
+![WhatsApp Image 2021-11-27 at 8 14 06 AM](https://user-images.githubusercontent.com/61041490/143735034-0547c2f9-a62c-45ac-b4a1-15c36bb9195a.jpeg)
+![schema_Myt5vqqplZ](https://user-images.githubusercontent.com/91405741/138436635-60cb2ec4-091d-4f24-bf96-b0289e06fa00.png)
+
+## Procedure
+
+* Connect the 3.3v output of the Arduino to the positive rail of the breadboard
+* Connect the ground to the negative rail of the breadboard
+* Place the LDR on the breadboard
+* Attach the 10K resistor to one of the legs of the LDR
+* Connect the A0 pin of the Arduino to the same column where the LDR and resistor is connected (Since the LDR gives out an analog voltage, it is connected to the analog input pin on the Arduino. The Arduino, with its built-in ADC (Analog to Digital Converter), then converts the analog voltage from 0-5V into a digital value in the range of 0-1023). - Now connect the other end of the 10K resistor to the negative rail
+* And the the second (free) leg of the LDR to the positive rail
+Pretty much this is what we need for the light sensing. Basic circuits like this can be done without an Arduino aswell. However, if you want to log the values and use it to create charts, run other logics etc. I will recomend an Arduino or ESP8266 or may be a ESP32 for this.
+Now, as we want our circuit to do something in the real world other than just displaying the values on the computer screen we will be attaching a LED to the circuit. The LED will turn on when its dark and will go off when its bright. To achieve this we will:
+* Place the LED on the breadboard
+* Connect the 220ohm resistor to the long leg (+ve) of the LED
+* Then we will connect the other leg of the resistor to pin number 13 (digital pin) of the Arduino
+* and the shorter leg of the LED to the negative rail of the breadboard
+
+## Code
+
+```
+const int ledPin = 13;
+const int ldrPin = A0;
+void setup() {
+Serial.begin(9600);
+pinMode(ledPin, OUTPUT);
+pinMode(ldrPin, INPUT);
+}
+void loop() {
+int ldrStatus = analogRead(ldrPin);
+if (ldrStatus <= 200) {
+digitalWrite(ledPin, HIGH);
+Serial.print("Its DARK, Turn on the LED : ");
+Serial.println(ldrStatus);
+} else {
+digitalWrite(ledPin, LOW);
+Serial.print("Its BRIGHT, Turn off the LED : ");
+Serial.println(ldrStatus);
+}
+}
+```
+
+## Output
+
+<iframe width="560" height="315"
+src=
+
+
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+## Experiment 8 : Flame Sensor
