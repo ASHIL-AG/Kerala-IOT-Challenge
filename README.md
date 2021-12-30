@@ -368,7 +368,8 @@ Now, as we want our circuit to do something in the real world other than just di
 ## Code
 
 ```
-const int ledPin = 13;
+
+const int ledPin = 10;
 const int ldrPin = A0;
 void setup() {
 Serial.begin(9600);
@@ -377,7 +378,7 @@ pinMode(ldrPin, INPUT);
 }
 void loop() {
 int ldrStatus = analogRead(ldrPin);
-if (ldrStatus <= 200) {
+if (ldrStatus >= 500) {
 digitalWrite(ledPin, HIGH);
 Serial.print("Its DARK, Turn on the LED : ");
 Serial.println(ldrStatus);
