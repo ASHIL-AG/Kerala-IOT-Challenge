@@ -185,6 +185,7 @@ allowfullscreen></iframe>
 
 ![wQGca_3102_1628160139](https://user-images.githubusercontent.com/91405741/137344321-3e662dee-cb00-421d-a34d-848c2ffd1a6f.png)
 
+![IMG_20211231_000054](https://user-images.githubusercontent.com/95869156/147783707-f4af71d9-ca86-401a-ba0b-cb73360d6ee1.jpg)
 ## Code
 
 ```
@@ -212,7 +213,7 @@ else
 src=
 
 
-
+https://user-images.githubusercontent.com/95869156/147783915-ff390cb5-625e-48bd-8ccb-b578c90629de.mp4
 
 
 frameborder="0" 
@@ -235,6 +236,8 @@ allowfullscreen></iframe>
 ![BBr05_3102_1628160460](https://user-images.githubusercontent.com/91405741/137346830-1fa2408c-2a1d-4fdf-a049-5736aeb803ec.png)
 
 ![e9Pdc_3102_1628160446](https://user-images.githubusercontent.com/91405741/137346912-0f871dbf-8e86-4734-a337-fceeff454e33.png)
+![IMG_20211231_000540](https://user-images.githubusercontent.com/95869156/147783760-0cd71094-c9da-48f7-a630-693c814f329e.jpg)
+
 
 ## Code
 
@@ -256,7 +259,7 @@ digitalWrite(buzzer, HIGH); // produce sound
 <iframe width="560" height="315"
 src=
 
-
+https://user-images.githubusercontent.com/95869156/147783940-03ee47a1-cac0-42e9-bd27-b81fb6b48179.mp4
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -279,6 +282,7 @@ allowfullscreen></iframe>
 ![A8a40_3102_1628160631](https://user-images.githubusercontent.com/91405741/137347782-e0a8a008-8706-4b7c-ba31-38ef0ab6ca72.png)
 
 ![TefdI_3102_1628167200](https://user-images.githubusercontent.com/91405741/137347822-228ccf9c-3a89-45ba-bb24-c3b0ee587818.png)
+![IMG_20211231_001727](https://user-images.githubusercontent.com/95869156/147783842-52738376-a9c3-4612-8eec-d67cc0b08d5a.jpg)
 
 ## Code
 
@@ -319,7 +323,7 @@ for(val=0; val<255; val++)
 <iframe width="560" height="315"
 src=
 
-
+https://user-images.githubusercontent.com/95869156/147783968-7e6f1a33-a312-44d9-b7cb-fac464fc960c.mp4
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -335,6 +339,7 @@ allowfullscreen></iframe>
 
 
 ![L5Iw9_3102_1628755894](https://user-images.githubusercontent.com/91405741/138436746-d1cfb008-0d90-4754-b4c4-fe133329c8b5.png)
+![IMG_20211231_005943](https://user-images.githubusercontent.com/95869156/147783874-b2e4e58e-b164-4542-9276-fe35254b3221.jpg)
 
 ## Components Required
 
@@ -395,7 +400,7 @@ Serial.println(ldrStatus);
 <iframe width="560" height="315"
 src=
 
-
+https://user-images.githubusercontent.com/95869156/147783995-b962eab1-095c-4c26-8885-e16e8e354f0e.mp4
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
