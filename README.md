@@ -407,3 +407,141 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 
 ## Experiment 8 : Flame Sensor
+
+> We are using Infrared Receiver (IR)for detecting Flame 
+## Components Required
+* Arduino Uno Board*1
+* Flame Sensor *1
+* Buzzer *1
+* LED *2
+* Breadboard 
+* Jumper Wire*6
+* USB cable*1
+
+## Circuit Diagram
+
+
+
+
+## Code
+
+```
+const int buzzerPin = 12;
+const int flamePin = 11;
+int Flame = HIGH;
+int redled = 5;
+int greenled = 6;
+void setup() 
+{
+  pinMode(buzzerPin, OUTPUT);
+  pinMode(redled, OUTPUT);
+  pinMode(greenled, OUTPUT);
+  pinMode(flamePin, INPUT);
+  Serial.begin(9600);
+}
+void loop() 
+{
+  Flame = digitalRead(flamePin);
+  if (Flame== LOW)
+  {
+    digitalWrite(buzzerPin, HIGH);
+    digitalWrite(redled, HIGH);
+    digitalWrite(greenled, LOW);
+  }
+  else
+  {
+    digitalWrite(buzzerPin, LOW);
+    digitalWrite(greenled, HIGH);
+    digitalWrite(redled, LOW);
+  }
+}
+```
+
+## Output
+
+> The buzzer produces a beep noise along with red LED lighting up when the IR Reciever is exposed to flames.
+
+
+
+<iframe width="560" height="315"
+src=
+
+
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+
+## Experiment 9 : LM35 Temperature Sensor
+
+> LM35 is a common and easy-to-use temperature sensor.
+
+
+## Components Required 
+
+> LM35 is a widely used temperature sensor with many different package types. At room temperature, it can achieve the accuracy of ±1/4°C without additional calibration processing.
+> LM35 temperature sensor can produce different voltage by different temperature
+When temperature is 0 ℃, it outputs 0V; if increasing 1 ℃, the output voltage will increase 10 mv.
+The output temperature is 0℃～100℃, the conversion formula is as follows:
+![image](https://user-images.githubusercontent.com/56971600/138460051-cbde66eb-988b-4f15-b350-fb4c29fafa99.png)
+
+## Components Required
+
+* Arduino Uno  Board*1
+* LM35*1
+* Breadboard*1
+* Breadboard Jumper Wire*5
+* USB cable*1
+
+## Circuit Diagram 
+
+
+## Code
+
+```
+int potPin = 0; // initialize analog pin 0 for LM35 temperature sensor
+void setup()
+{
+Serial.begin(9600);// set baud rate at”9600”
+}
+void loop()
+{
+int val;// define variable
+int dat;// define variable
+val=analogRead(0);// read the analog value of the sensor and assign it to val
+dat=(125*val)>>8;// temperature calculation formula
+Serial.print("Tep");// output and display characters beginning with Tep
+Serial.print(dat);// output and display value of dat
+Serial.println("C");// display “C” characters
+delay(500);// wait for 0.5 second
+}
+```
+
+## Output
+
+> Temperature values read by LM35 sensor can be seen in the Serial Moniter.
+
+
+<iframe width="560" height="315"
+src=
+
+
+
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+# Experiment 10:IR Remote Control Using TSOP
+
+> An experiment to understand the working of IR Remote Control using TSOP.
+## Components Required
+
+* Arduino Uno Board*1
+* Infrared Remote Controller(You can use TV Remote or any other remote) *1
+* Infrared Receiver *1
+* LED *6
+* 220ΩResistor *6
+* Breadboard Wire 
+* USB cable*1
+
+## Circuit Diagrams
+
