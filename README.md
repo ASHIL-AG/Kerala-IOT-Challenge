@@ -426,37 +426,27 @@ allowfullscreen></iframe>
 ## Code
 
 ```
-//Arduino Flame Sensor
-const int buzzerPin = 12;
-const int flamePin = 11;
-int Flame = HIGH;
-int redled = 5;
-int greenled = 6;
-void setup() 
-{
-  pinMode(buzzerPin, OUTPUT);
-  pinMode(redled, OUTPUT);
-  pinMode(greenled, OUTPUT);
+int flame=0;
+int buzzer=9;
+int val=0;
+void setup() {
+ 
+pinMode(buzzer,OUTPUT);
+pinMode(flame,INPUT);
+Serial.begin(9600);
 
-  pinMode(flamePin, INPUT);
-  Serial.begin(9600);
 }
 
-void loop() 
-{
-  Flame = digitalRead(flamePin);
-  if (Flame== LOW)
+void loop() {
+  val=analogRead(flame);
+  Serial.println(val);
+  if(val>=600)
   {
-    digitalWrite(buzzerPin, HIGH);
-    digitalWrite(redled, HIGH);
-    digitalWrite(greenled, LOW);
-  }
-  else
-  {
-    digitalWrite(buzzerPin, LOW);
-    digitalWrite(greenled, HIGH);
-    digitalWrite(redled, LOW);
-  }
+    digitalWrite(buzzer,HIGH);
+  }else
+{digitalWrite(buzzer,LOW);
+}
+delay(500);
 }
 
   
