@@ -487,7 +487,7 @@ The output temperature is 0℃～100℃, the conversion formula is as follows:
 * USB cable*1
 
 ## Circuit Diagram 
-
+![IMG_20220124_235906](https://user-images.githubusercontent.com/95869156/151691060-7b9df1b2-72c9-4e96-ba85-9de1c86efb59.jpg)
 
 ## Code
 
@@ -518,7 +518,7 @@ delay(500);// wait for 0.5 second
 <iframe width="560" height="315"
 src=
 
-
+https://user-images.githubusercontent.com/95869156/151691100-484606ef-2b94-422e-b81b-5841db2f9d08.mp4
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -549,7 +549,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-
+![IMG_20220129_220133](https://user-images.githubusercontent.com/95869156/151691065-d4d658ee-8962-464f-8708-699e0df663c0.jpg)
 
 ## Code
 
@@ -623,7 +623,7 @@ void loop() {
 src=
      
 
-
+https://user-images.githubusercontent.com/95869156/151691105-1b28cb0d-4c99-42e4-8b3b-21a9f61bb4f7.mp4
 
    
 frameborder="0" 
@@ -644,7 +644,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-
+![IMG_20220130_105040](https://user-images.githubusercontent.com/95869156/151691070-8ab3589f-6392-442e-831c-0a603847bbae.jpg)
 
 ## Code
 
@@ -673,7 +673,7 @@ Serial.println(val);// display val’s value
 <iframe width="560" height="315"
 src=
         
-
+https://user-images.githubusercontent.com/95869156/151691107-960faf81-cb8f-42fa-b659-6dbbd7a47fb9.mp4
 
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -694,7 +694,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams
 
-
+![IMG_20220130_112332](https://user-images.githubusercontent.com/95869156/151691074-6525700f-b706-4e79-b48c-d8cd1ecadf80.jpg)
 
 
 ```
@@ -847,7 +847,7 @@ delay(1000); // wait for 1s
 src=
         
 
-
+https://user-images.githubusercontent.com/95869156/151691111-04f586c0-e6d7-436e-bee1-298980983416.mp4
 
 
 frameborder="0" 
@@ -861,7 +861,7 @@ allowfullscreen></iframe>
 
 * Arduino Uno Board
 * Photo Resistor*1
-* Yellow M5 LED*1
+* LED*1
 * 10KΩ Resistor*1
 * 220Ω Resistor*1
 * Breadboard*1
@@ -930,7 +930,7 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams 
 
-
+![IMG_20220130_124216](https://user-images.githubusercontent.com/95869156/151691085-bc3c017e-68b2-47f6-b877-7c742f6d2a59.jpg)
 
                                                                              
 ## Code
@@ -1099,6 +1099,8 @@ switch (COUNT)
 <iframe width="560" height="315"
 src=
 
+
+https://user-images.githubusercontent.com/95869156/151691131-21b6832b-66cd-416d-82ce-8ca9ab97fa48.mp4
 
 
 
