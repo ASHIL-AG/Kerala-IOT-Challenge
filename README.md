@@ -565,7 +565,6 @@ void setup()
    pinMode(9, OUTPUT);
    pinMode(10, OUTPUT);
    pinMode(11, OUTPUT);
-   pinMode(12, OUTPUT);
    Serial.begin(9600);
   irrecv.enableIRIn();                     
 }
@@ -573,7 +572,7 @@ void loop() {
   if (irrecv.decode(&results)) {
     Serial.println(results.value);
     irrecv.resume();                        
-  if(results.value==16773645)      //Up                            
+  if(results.value==350984295)      //Up                            
   {
              digitalWrite(8,HIGH);
   }
@@ -581,7 +580,7 @@ void loop() {
   {
              digitalWrite(8,LOW);
   }
-   if(results.value==16763445)  //Down                                     
+   if(results.value==350949615)  //Down                                     
   {
              digitalWrite(9,HIGH);
   }
@@ -589,7 +588,7 @@ void loop() {
   {
              digitalWrite(9,LOW);
   }
-    if(results.value==16769565) //left                                       
+    if(results.value==350994495) //left                                       
   {
              digitalWrite(10,HIGH);
   }
@@ -597,7 +596,7 @@ void loop() {
   {
              digitalWrite(10,LOW);
   }
-    if(results.value==16771605) //right                                       
+    if(results.value==350992455) //right                                       
   {
              digitalWrite(11,HIGH);
   }
@@ -605,16 +604,10 @@ void loop() {
   {
              digitalWrite(11,LOW);
   }
-    if(results.value==16714485) //ok                                       
-  {
-             digitalWrite(12,HIGH);
-  }
-  else if(results.value==4294967295)
-  {
-             digitalWrite(12,LOW);
+   
   }
   }
-}
+
 ```
 
 ## Output
