@@ -870,39 +870,43 @@ allowfullscreen></iframe>
 
 ## Circuit Diagrams 
 
+![L5Iw9_3102_1628755894](https://user-images.githubusercontent.com/91405741/138436746-d1cfb008-0d90-4754-b4c4-fe133329c8b5.png)
+![IMG_20211231_005943](https://user-images.githubusercontent.com/95869156/147783874-b2e4e58e-b164-4542-9276-fe35254b3221.jpg)
+![schema_Myt5vqqplZ](https://user-images.githubusercontent.com/91405741/138436635-60cb2ec4-091d-4f24-bf96-b0289e06fa00.png)
 
 
 ## Code
-
 ```
-const int ledPin = 13;   //the number of the LED pin
-const int ldrPin = A0;  //the number of the LDR pin
+
+const int ledPin = 10;
+const int ldrPin = A0;
 void setup() {
-  Serial.begin(9600);
-  pinMode(ledPin, OUTPUT);  //initialize the LED pin as an output
-  pinMode(ldrPin, INPUT);   //initialize the LDR pin as an input
+Serial.begin(9600);
+pinMode(ledPin, OUTPUT);
+pinMode(ldrPin, INPUT);
 }
 void loop() {
-  int ldrStatus = analogRead(ldrPin);   //read the status of the LDR value
-  //check if the LDR status is <= 300
-  //if it is, the LED is HIGH
-   if (ldrStatus <=300) {
-    digitalWrite(ledPin, HIGH);               //turn LED on
-    Serial.println("LDR is DARK, LED is ON");
-   }
-  else {
-    digitalWrite(ledPin, LOW);          //turn LED off
-    Serial.println("LDR is Bright, LED is OFF");
-  }
+int ldrStatus = analogRead(ldrPin);
+if (ldrStatus >= 500) {
+digitalWrite(ledPin, HIGH);
+Serial.print("Its DARK, Turn on the LED : ");
+Serial.println(ldrStatus);
+} else {
+digitalWrite(ledPin, LOW);
+Serial.print("Its BRIGHT, Turn off the LED : ");
+Serial.println(ldrStatus);
+}
 }
 ```
+
+
 
 ## Output
 
 <iframe width="560" height="315"
 src=
 
-
+https://user-images.githubusercontent.com/95869156/147783995-b962eab1-095c-4c26-8885-e16e8e354f0e.mp4
 
 
 frameborder="0" 
