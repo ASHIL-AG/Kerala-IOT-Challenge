@@ -914,7 +914,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe> 
 
                                                   
-# Assignment 2 : Digital Dice  
+# Assignment 2 : Digital Dice using 7 segmemt display 
 
 > An experiment to create a Digital Dice using 6 LEDs and 1 Push Button
 ## Components Required
@@ -923,7 +923,7 @@ allowfullscreen></iframe>
 * Breadboard*1
 * Breadboard Jumper Wire
 * USB cable*1
-* LED*6
+* 7 segment display
 * Push Button*1
 * 1KΩ Resistor*1
 * 220Ω Resistor*6
@@ -936,95 +936,160 @@ allowfullscreen></iframe>
 ## Code
 
 ```
-#define DEBUG 0
-// 6 consecutive digital pins for the LEDs
-int first = 2;
-int second = 3;
-int third = 4;
-int fourth = 5;
-int fifth = 6;
-int sixth = 7;
-// pin for the button switch
-int button = 12;
-// value to check state of button switch
-int pressed = 0;
-void setup() {
-  // set all LED pins to OUTPUT
-  for (int i=first; i<=sixth; i++) {
-    pinMode(i, OUTPUT);
-  }
-  // set buttin pin to INPUT
-  pinMode(button, INPUT);
-  // initialize random seed by noise from analog pin 0 (should be unconnected)
-  randomSeed(analogRead(0));
-  // if we're debugging, connect to serial 
-  #ifdef DEBUG
-    Serial.begin(9600);
-  #endif
+int a=7;// set digital pin 7 for segment a
+int b=6;// set digital pin 6 for segment b
+int c=5;// set digital pin 5 for segment c
+int d=10;// set digital pin 10 for segment d
+int e=11;// set digital pin 11 for segment e
+int f=8;// set digital pin 8 for segment f
+int g=9;// set digital pin 9 for segment g
+int dp=4;// set digital pin 4 for segment dp
+int COUNT=0;//count integer for 0-6 increment
+int dice=12;
+void digital_0(void) // display number 5
+{
+unsigned char j;
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,LOW);
+digitalWrite(dp,LOW);
 }
-void buildUpTension() {
-  // light LEDs from left to right and back to build up tension
-  // while waiting for the dice to be thrown
-  // left to right
-  for (int i=first; i<=sixth; i++) {
-    if (i!=first) {
-      digitalWrite(i-1, LOW);
-    }
-    digitalWrite(i, HIGH);
-    delay(100);
-  }
-  // right to left
-  for (int i=sixth; i>=first; i--) {
-    if (i!=sixth) {
-      digitalWrite(i+1, LOW);
-    }
-    digitalWrite(i, HIGH);
-    delay(100);
-  }
+void digital_1(void) // display number 1
+{
+unsigned char j;
+digitalWrite(c,HIGH);// set level as “high” for pin 5, turn on segment c
+digitalWrite(b,HIGH);// turn on segment b
+for(j=7;j<=11;j++)// turn off other segments
+digitalWrite(j,LOW);
+digitalWrite(dp,LOW);// turn off segment dp
 }
-void showNumber(int number) {
-  digitalWrite(first, HIGH);
-  if (number >= 2) {
-    digitalWrite(second, HIGH);
-  }
-  if (number >= 3) {
-    digitalWrite(third, HIGH);    
-  }
-  if (number >= 4) {
-    digitalWrite(fourth, HIGH);    
-  }
-  if (number >= 5) {
-    digitalWrite(fifth, HIGH);    
-  }
-  if (number == 6) {
-    digitalWrite(sixth, HIGH);    
-  }
+void digital_2(void) // display number 2
+{
+unsigned char j;
+digitalWrite(b,HIGH);
+digitalWrite(a,HIGH);
+for(j=9;j<=11;j++)
+digitalWrite(j,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(c,LOW);
+digitalWrite(f,LOW);
 }
-int throwDice() {
-  // get a random number in the range [1,6]
-  int randNumber = random(1,7);
-  
-  #ifdef DEBUG
-    Serial.println(randNumber);
-  #endif
-  
-  return randNumber;
+void digital_3(void) // display number 3
+{digitalWrite(g,HIGH);
+digitalWrite(a,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(f,LOW);
+digitalWrite(e,LOW);
 }
-void setAllLEDs(int value) {
-  for (int i=first; i<=sixth; i++) {
-    digitalWrite(i, value);
-  }
+void digital_4(void) // display number 4
+{digitalWrite(c,HIGH);
+digitalWrite(b,HIGH);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(a,LOW);
+digitalWrite(e,LOW);
+digitalWrite(d,LOW);
 }
-void loop() {
-  // if button is pressed - throw the dice
-  pressed = digitalRead(button);
-  if (pressed == HIGH) {
-    // remove previous number
-    setAllLEDs(LOW); 
-    buildUpTension();
-    int thrownNumber = throwDice();
-    showNumber(thrownNumber);
-  } 
+void digital_5(void) // display number 5
+{
+unsigned char j;
+digitalWrite(a,HIGH);
+digitalWrite(b, LOW);
+digitalWrite(c,HIGH);
+digitalWrite(d,HIGH);
+digitalWrite(e, LOW);
+digitalWrite(f,HIGH);
+digitalWrite(g,HIGH);
+digitalWrite(dp,LOW);
+}
+void digital_6(void) // display number 6
+{
+unsigned char j;
+for(j=7;j<=11;j++)
+digitalWrite(j,HIGH);
+digitalWrite(c,HIGH);
+digitalWrite(dp,LOW);
+digitalWrite(b,LOW);
+}
+void setup()
+{
+int i;// set variable
+for(i=4;i<=11;i++)
+pinMode(i,OUTPUT);// set pin 4-11as “output”               
+pinMode(dice, INPUT);
+digitalWrite(dice, HIGH);
+}
+
+void loop()
+{
+                COUNT = random(1, 7);
+                  if(digitalRead(dice)==0)
+                {
+                  roll(COUNT);
+                  delay(4000);                  
+                  
+                }
+
+                  roll(COUNT);
+                  delay(80);      
+}
+
+
+void roll(int COUNT)
+{
+switch (COUNT)
+
+                {
+
+                case 0://when count value is zero show”0” on disp
+                 digital_0();
+
+                break;
+
+                case 1:// when count value is 1 show”1” on disp
+
+                 digital_1();
+                break;
+
+                case 2:// when count value is 2 show”2” on disp
+
+                 digital_2();
+
+                break;
+
+                case 3:// when count value is 3 show”3” on disp
+
+                  digital_3();
+
+                break;
+
+                case 4:// when count value is 4 show”4” on disp
+
+                 digital_4();
+                break;
+
+                case 5:// when count value is 5 show”5” on disp
+
+                 digital_5();
+
+                break;
+
+                case 6:// when count value is 6 show”6” on disp
+
+                 digital_6();
+                 break;
+
+                 break;
+
+                }  
 }
 ```
 
